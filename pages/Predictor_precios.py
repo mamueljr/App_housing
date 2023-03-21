@@ -11,15 +11,12 @@ from funciones import *
 st.title('Prediccion Precios de Casas')
 st.write(housing.head())
 st.sidebar.header('Datos de Entrada:')
-#st.header('Datos de entrada de usuario:')
-#col1, col2 = st.columns(2)
-#with col1:
+
 longitude = st.sidebar.slider('Longitud', value=-122.23)
 latitude = st.sidebar.slider('Latitud', value=37.88)
 housing_median_age = st.sidebar.slider('Primedio de adad de los habitantes', value=41)
 total_rooms = st.sidebar.slider('Numero de cuartos', value=880)
 total_bedrooms = st.sidebar.slider('Numero de camas', value=129)
-#with col2:
 population = st.sidebar.slider('Poblacion', value=322)
 households = st.sidebar.slider('Hogares alrededor', value=126)
 median_income = st.sidebar.slider('Ingreso medio', value=8.33)
